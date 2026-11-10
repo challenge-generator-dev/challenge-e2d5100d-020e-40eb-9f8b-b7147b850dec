@@ -1,0 +1,51 @@
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+*.tfstate.locl
+
+# Directorio de estado remoto
+.terraform/
+.terraform.lock.hcl
+
+# Logs de Terraform
+*.log
+
+# Archivos de variables sensibles
+*.tfvars.secret
+*.tfvars.auto.tfvars
+
+# Archivos de backup
+*.bak
+*~
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Certificados y claves sensibles (excluir los que no deben estar en repo)
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+
+# Archivos de configuración local
+local.tf
+override.tf
+override.tf.json
+
+# Plan files
+*.plan
+*.plan.json
+
+# Credentials file
+credentials.tfvars
+secrets.tfvars
